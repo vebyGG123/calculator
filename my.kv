@@ -1,0 +1,191 @@
+
+<Calculator>:
+	uzmenenia_label: mdlabel
+
+
+	MDBoxLayout:
+		orientation: 'vertical'
+		size: root.width, root.height
+
+		MDTopAppBar:
+			title: "Калькулятор"
+			elevation: 3
+			left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
+			
+			
+		MDLabel:
+			id: mdlabel
+			text: "0"
+			halign: "center"
+			theme_text_color: "ContrastParentBackground"
+			font_size: 40
+
+		
+		MDGridLayout:
+			cols: 4
+			rows: 8
+			
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "0"
+			    size_hint: root.width, root.height
+
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_0()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "1"
+			    size_hint: root.width, root.height
+
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_1()
+
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "2"
+			    size_hint: root.width, root.height
+
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_2()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "3"
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_3()
+			
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "4"
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_4()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "5"
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_5()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "6"
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_6()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "7"
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_7()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "8"
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_8()
+			
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "9"
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_9()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "C"
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_clear()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "."
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_floatchange()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "+"
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_plus()
+
+
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "-"
+			    size_hint: root.width, root.height
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_minus()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "*"
+			    size_hint: root.width, root.height
+			    
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_ymnosh()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "/"
+			    size_hint: root.width, root.height
+			    
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_delenua()
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "**"
+			    size_hint: root.width, root.height
+			    
+			    font_size: 20
+				text_color: 0, 0, 0, 1
+				on_release: root.button_stepen()		    
+
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "√x"
+			    size_hint: root.width, root.height
+			    
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_corren()
+
+			
+			MDRoundFlatIconButton:
+			    icon: "language-python"
+			    text: "="
+			    size_hint: root.width, root.height
+			    
+			    font_size: 20
+			    text_color: 0, 0, 0, 1
+			    on_release: root.button_otvet()
